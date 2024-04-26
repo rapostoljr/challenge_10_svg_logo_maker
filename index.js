@@ -39,7 +39,7 @@ function writeToFile(fileName, data) {
             return console.log(error);
         }
         // Displays when logo has been successfully created.
-        console.log('Genereated logo.svg')
+        console.log('Generated logo.svg')
     })
 }
 

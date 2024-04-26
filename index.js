@@ -13,13 +13,13 @@ const questions = [
     {
         type: "input",
         name: "text_color",
-        message: "What color would you like your text: ",
+        message: "What color would you like your text (can also be in hexadecimal): ",
     },
     // Asks user for color of the shape of the logo
     {
         type: "input",
         name: "shape_color",
-        message: "What color would you like your shape: ",
+        message: "What color would you like your shape (can also be in hexadecimal): ",
     },
     // Asks user for shape of logo
     {
@@ -39,7 +39,7 @@ function writeToFile(fileName, data) {
             return console.log(error);
         }
         // Displays when logo has been successfully created.
-        console.log('Logo.svg has been created.')
+        console.log('Genereated logo.svg')
     })
 }
 

@@ -46,7 +46,11 @@ function writeToFile(fileName, data) {
 // Function to initialize the app
 function init() {
     inquirer.prompt(questions).then((data) => {
-        writeToFile("db/logo.svg", data);
+        if (data.text.length > 3 || data.text.length === 0) {
+            console.log('ERROR: Please enter MAX of 3 Characters.')
+        } else {
+            writeToFile("db/logo.svg", data);
+        }
     });
 };
 // Function call to initialize app
